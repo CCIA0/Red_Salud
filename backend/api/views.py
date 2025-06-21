@@ -1,21 +1,16 @@
-from rest_framework import viewsets
-from .models import Doctor, Box, Reserva, Horario, Actividad
-from .serializers import DoctorSerializer, BoxSerializer, ReservaSerializer, ActividadSerializer
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
+from .models import Doctor, Box
+from .serializers import DoctorSerializer, BoxSerializer
 
-class DoctorViewSet(viewsets.ModelViewSet):
-    queryset = Doctor.objects.all()
-    serializer_class = DoctorSerializer
+@api_view(['GET'])
+def doctor_list(request):
+    doctors = Doctor.objects.all()
+    serializer = DoctorSerializer(doctors, many=True)
+    return Response(serializer.data)
 
-class BoxViewSet(viewsets.ModelViewSet):
-    queryset = Box.objects.all().order_by('id')
-    serializer_class = BoxSerializer
-
-class ReservaViewSet(viewsets.ModelViewSet):
-    queryset = Reserva.objects.all()
-    serializer_class = ReservaSerializer
-
-class ActividadViewSet(viewsets.ModelViewSet):
-    queryset = Actividad.objects.all().order_by('id')
-    serializer_class = ActividadSerializer
-
-
+@api_view(['GET'])
+def box_list(request):
+    boxes = Box.objects.all()
+    serializer = BoxSerializer(boxes, many=True)
+    return Response(serializer.data)
