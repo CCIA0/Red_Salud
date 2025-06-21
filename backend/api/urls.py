@@ -1,7 +1,10 @@
-from django.urls import path
-from .views import doctor_list, box_list
+from rest_framework.routers import DefaultRouter
+from .views import DoctorViewSet, BoxViewSet, ReservaViewSet, ActividadViewSet
 
-urlpatterns = [
-    path('doctors/', doctor_list, name='doctor-list'),
-    path('boxes/', box_list, name='box-list'),
-]
+router = DefaultRouter()
+router.register(r'doctores', DoctorViewSet)
+router.register(r'boxes', BoxViewSet)
+router.register(r'reservas', ReservaViewSet)
+router.register(r'actividades', ActividadViewSet)
+
+urlpatterns = router.urls
