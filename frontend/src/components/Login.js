@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "../styles/Login.css";
 
 function Login({ onLogin }) {
   const [username, setUsername] = useState('');
@@ -21,25 +22,35 @@ function Login({ onLogin }) {
     }
   };
 
-  return (
-    <form onSubmit={handleSubmit}>
-      <h2>Iniciar Sesión</h2>
-      <input
-        type="text"
-        placeholder="Usuario"
-        value={username}
-        onChange={(e) => setUsername(e.target.value)}
-        required
-      />
-      <input
-        type="password"
-        placeholder="Contraseña"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-        required
-      />
-      <button type="submit">Entrar</button>
-    </form>
+return (
+    <div className="login-container">
+      <div className="login-box">
+        <img
+          src="/redsalud.png" 
+          alt="Clínica Dental RedSalud"
+          className="logo"
+        />
+        <h2>Bienvenido</h2>
+        <p>Ingrese sus datos para utilizar todas las funciones del sistema.</p>
+        <form onSubmit={handleSubmit}>
+          <label>Usuario</label>
+          <input
+            type="text"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            required
+          />
+          <label>Contraseña</label>
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+          <button type="submit">Inicio Sesión</button>
+        </form>
+      </div>
+    </div>
   );
 }
 

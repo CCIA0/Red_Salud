@@ -1,0 +1,104 @@
+/* CrearActividad.css */
+
+.crear-actividad-container {
+  background-color: #f8f8f8;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.crear-actividad-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.crear-actividad-container input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.crear-actividad-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.crear-actividad-container button[type="submit"] {
+  background-color: #009999;
+  color: white;
+}
+
+.crear-actividad-container button[type="submit"]:hover {
+  background-color: #007777;
+}
+
+.crear-actividad-container button[type="button"] {
+  background-color: #39b54a;
+  color: white;
+}
+
+.crear-actividad-container button[type="button"]:hover {
+  background-color: #2e9b3d;
+}
+
+.crear-actividad-container h2,
+.crear-actividad-container h3 {
+  color: #009999;
+}
+
+.crear-actividad-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.crear-actividad-container table th,
+.crear-actividad-container table td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.crear-actividad-container table th {
+  background-color: #009999;
+  color: white;
+}
+
+.crear-actividad-container table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Estilos específicos para los botones en la tabla */
+.crear-actividad-container td button {
+  margin: 2px 4px;
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+  background-color: #009999;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.crear-actividad-container td button:hover {
+  background-color: #39b54a;
+}
+
+.crear-actividad-container td button:nth-child(2) {
+  background-color: #ffebee;
+  color: #d32f2f;
+}
+
+.crear-actividad-container td button:nth-child(2):hover {
+  background-color: #ffcdd2;
+}

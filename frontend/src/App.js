@@ -7,6 +7,7 @@ import CrearBox from './components/CrearBox';
 import CrearReserva from './components/CrearReserva';
 import TestAPI from './components/TestAPI';
 import CrearActividad from './components/CrearActividad';
+import Sidebar from './components/Sidebar';
 
 function App() {
   const [token, setToken] = useState(null);
@@ -21,19 +22,9 @@ function App() {
 
   return (
     <Router>
-      <div className="App">
+      <Sidebar />
+      <div className="App" style={{ marginLeft: '260px', padding: '20px' }}>
         <h1>Red Salud - Asignación de Boxes</h1>
-
-        <nav>
-          <ul>
-            <li><Link to="/">Inicio</Link></li>
-            <li><Link to="/crear-doctor">Crear Doctor</Link></li>
-            <li><Link to="/crear-box">Crear Box</Link></li>
-            <li><Link to="/crear-reserva">Crear Reserva</Link></li>
-            <li><Link to="/crear-actividad">Crear Actividad</Link></li>
-          </ul>
-        </nav>
-
         <Routes>
           <Route path="/" element={<TestAPI token={token} />} />
           <Route path="/crear-doctor" element={<CrearDoctor token={token} />} />

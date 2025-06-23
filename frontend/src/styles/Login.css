@@ -1,0 +1,65 @@
+/* CONTENEDOR PRINCIPAL */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #009999, #39b54a);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* LOGO */
+.login-container .logo {
+  width: 250px;
+  margin-bottom: 0px;
+}
+
+/* CAJA BLANCA */
+.login-container .login-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.2);
+}
+
+/* TEXTOS */
+.login-container h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.login-container p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* INPUTS */
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0 20px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* BOTÓN */
+.login-container button {
+  background: linear-gradient(to right, #009999, #39b54a);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+
+.login-container button:hover {
+  transform: scale(1.03);
+}

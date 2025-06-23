@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import "../styles/CrearActividad.css"
 
 function CrearActividad({ token }) {
   const [nombre, setNombre] = useState('');
@@ -89,7 +90,7 @@ function CrearActividad({ token }) {
   };
 
   return (
-    <div>
+    <div className="crear-actividad-container">
       <form onSubmit={handleSubmit}>
         <h2>{editingId ? 'Editar Actividad' : 'Crear Actividad'}</h2>
         <input

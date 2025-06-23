@@ -1,0 +1,49 @@
+/* TestAPI.css */
+
+.reservas-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f9fdfc;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.reservas-container h2 {
+  text-align: center;
+  color: #006666;
+  margin-bottom: 25px;
+  font-size: 26px;
+  border-bottom: 2px solid #39b54a;
+  padding-bottom: 10px;
+}
+
+.reservas-list {
+  list-style: none;
+  padding: 0;
+}
+
+.reserva-item {
+  background-color: #ffffff;
+  border: 1px solid #e0f2ef;
+  border-left: 6px solid #39b54a;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.reserva-item:hover {
+  background-color: #f1fbf8;
+}
+
+.reserva-item strong {
+  color: #333;
+}
+
+.reserva-vacio {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+}

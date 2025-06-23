@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import "../styles/TestAPI.css"
 
 function TestAPI({ token }) {
   const [reservas, setReservas] = useState([]);
@@ -19,23 +20,23 @@ function TestAPI({ token }) {
   }, [token]);
 
   return (
-    <div>
-      <h2>ReservaList</h2>
-      <ul>
-        {reservas.length === 0 ? (
-          <li>No hay reservas registradas.</li>
-        ) : (
-          reservas.map(reserva => (
-            <li key={reserva.id}>
-              Fecha: {reserva.fecha} <br />
-              Doctor: {reserva.doctor_detail?.nombre || 'Sin asignar'} <br />
-              Box: {reserva.box_detail?.codigo ? `Box ${reserva.box_detail.codigo}` : 'Sin box'} <br />
-            </li>
-          ))
-        )}
-      </ul>
-    </div>
-  );
+  <div className="reservas-container">
+    <h2>ReservaList</h2>
+    <ul className="reservas-list">
+      {reservas.length === 0 ? (
+        <li className="reserva-vacio">No hay reservas registradas.</li>
+      ) : (
+        reservas.map(reserva => (
+          <li className="reserva-item" key={reserva.id}>
+            <strong>Fecha:</strong> {reserva.fecha} <br />
+            <strong>Doctor:</strong> {reserva.doctor_detail?.nombre || 'Sin asignar'} <br />
+            <strong>Box:</strong> {reserva.box_detail?.codigo ? `Box ${reserva.box_detail.codigo}` : 'Sin box'} <br />
+          </li>
+        ))
+      )}
+    </ul>
+  </div>
+);
 }
 
 export default TestAPI;

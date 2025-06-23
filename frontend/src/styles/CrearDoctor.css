@@ -1,0 +1,104 @@
+/* CrearDoctor.css */
+
+.crear-doctor-container {
+  background-color: #f8f8f8;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.crear-doctor-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.crear-doctor-container input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.crear-doctor-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.crear-doctor-container button[type="submit"] {
+  background-color: #009999;
+  color: white;
+}
+
+.crear-doctor-container button[type="submit"]:hover {
+  background-color: #007777;
+}
+
+.crear-doctor-container button[type="button"] {
+  background-color: #39b54a;
+  color: white;
+}
+
+.crear-doctor-container button[type="button"]:hover {
+  background-color: #2e9b3d;
+}
+
+.crear-doctor-container h2,
+.crear-doctor-container h3 {
+  color: #009999;
+}
+
+.crear-doctor-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.crear-doctor-container table th,
+.crear-doctor-container table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+.crear-doctor-container table th {
+  background-color: #009999;
+  color: white;
+}
+
+.crear-doctor-container table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Botones de acción en la tabla */
+.crear-doctor-container td button {
+  margin: 2px 4px;
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+  background-color: #009999;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.crear-doctor-container td button:hover {
+  background-color: #39b54a;
+}
+
+.crear-doctor-container td button:nth-child(2) {
+  background-color: #ffebee;
+  color: #d32f2f;
+}
+
+.crear-doctor-container td button:nth-child(2):hover {
+  background-color: #ffcdd2;
+}

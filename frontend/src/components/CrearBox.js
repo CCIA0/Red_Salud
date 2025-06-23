@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import "../styles/CrearBox.css"
 
 function CrearBox() {
   const [codigo, setCodigo] = useState('');
@@ -83,25 +84,26 @@ function CrearBox() {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <h2>{editingId ? 'Editar Box' : 'Agregar Box'}</h2>
+  <div className="crear-box-container">
+    <form onSubmit={handleSubmit}>
+      <h2>{editingId ? 'Editar Box' : 'Agregar Box'}</h2>
 
-        <label>
-          Código:
+      <div className="fila-doble">
+        <div className="form-item">
+          <label htmlFor="codigo">Código:</label>
           <input
+            id="codigo"
             type="number"
             value={codigo}
             onChange={(e) => setCodigo(e.target.value)}
             required
           />
-        </label>
+        </div>
 
-        <br /><br />
-
-        <label>
-          Actividad:
+        <div className="form-item">
+          <label htmlFor="actividad">Actividad:</label>
           <select
+            id="actividad"
             value={actividadId}
             onChange={(e) => setActividadId(e.target.value)}
           >
@@ -110,52 +112,51 @@ function CrearBox() {
               <option key={act.id} value={act.id}>{act.nombre}</option>
             ))}
           </select>
-        </label>
+        </div>
+      </div>
 
-        <br /><br />
-
-        <button type="submit">{editingId ? 'Actualizar' : 'Guardar'}</button>
-        {editingId && (
-          <button type="button" onClick={resetForm} style={{ marginLeft: '10px' }}>
-            Cancelar
-          </button>
-        )}
-      </form>
-
-      <hr />
-
-      <h3>Boxes creados</h3>
-      {boxes.length === 0 ? (
-        <p>No hay boxes creados.</p>
-      ) : (
-        <table border="1" cellPadding="5" cellSpacing="0">
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>Código</th>
-              <th>Actividad</th>
-              <th>Acciones</th>
-            </tr>
-          </thead>
-          <tbody>
-            {boxes.map(box => (
-              <tr key={box.id}>
-                <td>{box.id}</td>
-                <td>{box.codigo}</td>
-                <td>{box.actividad ? box.actividad.nombre : '-'}</td>
-                <td>
-                  <button onClick={() => handleEdit(box)}>Editar</button>
-                  <button onClick={() => handleDelete(box.id)} style={{ marginLeft: '10px', color: 'red' }}>
-                    Eliminar
-                  </button>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+      <button type="submit">{editingId ? 'Actualizar' : 'Guardar'}</button>
+      {editingId && (
+        <button type="button" onClick={resetForm} style={{ marginLeft: '10px' }}>
+          Cancelar
+        </button>
       )}
-    </div>
-  );
+    </form>
+
+    <hr />
+
+    <h3>Boxes creados</h3>
+    {boxes.length === 0 ? (
+      <p>No hay boxes creados.</p>
+    ) : (
+      <table border="1" cellPadding="5" cellSpacing="0">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Código</th>
+            <th>Actividad</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          {boxes.map(box => (
+            <tr key={box.id}>
+              <td>{box.id}</td>
+              <td>{box.codigo}</td>
+              <td>{box.actividad ? box.actividad.nombre : '-'}</td>
+              <td>
+                <button onClick={() => handleEdit(box)}>Editar</button>
+                <button onClick={() => handleDelete(box.id)} style={{ marginLeft: '10px', color: 'red' }}>
+                  Eliminar
+                </button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    )}
+  </div>
+);
 }
 
 export default CrearBox;

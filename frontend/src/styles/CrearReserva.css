@@ -1,0 +1,142 @@
+.crear-reserva-container {
+  padding: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* FORMULARIO */
+.crear-reserva-container form {
+  background-color: #ffffff;
+  border: 1px solid #009999;
+  border-radius: 10px;
+  padding: 25px;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  box-shadow: 0 0 15px rgba(0, 153, 153, 0.1);
+}
+
+.crear-reserva-container form h2 {
+  margin-top: 0;
+  color: #009999;
+}
+
+.crear-reserva-container label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.crear-reserva-container select,
+.crear-reserva-container input[type="date"],
+.crear-reserva-container input[type="time"],
+.crear-reserva-container input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #009999;
+  border-radius: 6px;
+  background-color: #e0f7f5;
+  color: #333333;
+  font-size: 14px;
+}
+
+.crear-reserva-container input[readonly] {
+  background-color: #eeeeee;
+}
+
+.crear-reserva-container button {
+  padding: 10px 16px;
+  background-color: #009999;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.crear-reserva-container button:hover {
+  background-color: #39b54a;
+}
+
+.crear-reserva-container button[type="button"] {
+  background-color: #39b54a;
+  color: white;
+  margin-left: 10px;
+}
+
+.crear-reserva-container button[type="button"]:hover {
+  background-color: #009999;
+}
+
+.crear-reserva-container hr {
+  margin: 40px auto;
+  width: 80%;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.crear-reserva-container h3 {
+  text-align: center;
+  color: #009999;
+  margin-top: 40px;
+}
+
+/* TABLA */
+.crear-reserva-container table {
+  width: 80%;
+  margin: 50px auto;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 10px 10px 10px rgba(0, 153, 153, 0.1);
+  border: 2px solid black; /* Cambiado a negro */
+}
+
+.crear-reserva-container th {
+  background-color: #009999;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid black; /* Cambiado a negro */
+}
+
+.crear-reserva-container td {
+  padding: 5px;
+  text-align: center;
+  border: 1px solid black; /* Cambiado a negro */
+}
+
+.crear-reserva-container tr:nth-child(even) {
+  background-color: #f1fefe;
+}
+
+/* Botones */
+.crear-reserva-container td button {
+  margin: 5px 10px;
+  padding: 10px 20px;
+  font-size: 12px;
+  border-radius: 4px;
+  background-color: #009999;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.crear-reserva-container td button:hover {
+  background-color: #39b54a;
+}
+
+.crear-reserva-container td button:nth-child(2) {
+  background-color: #ffebee;
+  color: #d32f2f;
+}
+
+.crear-reserva-container td button:nth-child(2):hover {
+  background-color: #ffcdd2;
+}
+

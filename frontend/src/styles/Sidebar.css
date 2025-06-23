@@ -1,0 +1,95 @@
+/* Sidebar.css */
+
+.toggle-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.logo-icon {
+  width: 40px;
+  height: auto;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  height: 100%;
+  width: 250px;
+  background-color: #009999;
+  color: white;
+  padding-top: 60px;
+  transition: left 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0 20px;
+}
+
+.sidebar ul li {
+  margin-bottom: 15px;
+}
+
+.sidebar ul li a,
+.submenu-toggle {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+.sidebar ul .submenu {
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.sidebar ul .submenu li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul .submenu li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.sidebar ul .submenu li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.sidebar ul .submenu li a {
+  color:  white;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.sidebar ul .submenu li a:hover {
+  color: #0056b3; 
+}
+

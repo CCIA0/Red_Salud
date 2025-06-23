@@ -1,0 +1,134 @@
+/* CrearBox.css */
+
+.crear-box-container {
+  background-color: #f8f8f8;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.crear-box-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.crear-box-container label {
+  font-weight: 600;
+  color: #009999;
+  font-size: 16px;
+}
+
+.crear-box-container input,
+.crear-box-container select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-left: 8px;
+}
+
+/* NUEVO: para mostrar Código y Actividad en fila horizontal */
+.fila-doble {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.form-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-item label {
+  margin-bottom: 10px;
+}
+
+.crear-box-container button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.crear-box-container button[type="submit"] {
+  background-color: #009999;
+  color: white;
+}
+
+.crear-box-container button[type="submit"]:hover {
+  background-color: #007777;
+}
+
+.crear-box-container button[type="button"] {
+  background-color: #39b54a;
+  color: white;
+}
+
+.crear-box-container button[type="button"]:hover {
+  background-color: #2e9b3d;
+}
+
+.crear-box-container h2,
+.crear-box-container h3 {
+  color: #009999;
+}
+
+/* Tabla estilos */
+.crear-box-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.crear-box-container table th,
+.crear-box-container table td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.crear-box-container table th {
+  background-color: #009999;
+  color: white;
+}
+
+.crear-box-container table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Botones en la tabla */
+.crear-box-container td button {
+  margin: 2px 4px;
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+  background-color: #009999;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.crear-box-container td button:hover {
+  background-color: #39b54a;
+}
+
+.crear-box-container td button:nth-child(2) {
+  background-color: #ffebee;
+  color: #d32f2f;
+}
+
+.crear-box-container td button:nth-child(2):hover {
+  background-color: #ffcdd2;
+}

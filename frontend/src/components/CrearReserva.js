@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import "../styles/CrearReserva.css"
 
 function CrearReserva({ token }) {
   const [form, setForm] = useState({
@@ -191,7 +192,7 @@ function CrearReserva({ token }) {
   };
 
   return (
-    <div>
+    <div className="crear-reserva-container">
       <form onSubmit={handleSubmit}>
         <h2>{editingId ? 'Editar Reserva' : 'Crear Reserva'}</h2>
 

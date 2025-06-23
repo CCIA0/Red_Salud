@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import "../styles/CrearDoctor.css"
 
 function CrearDoctor({ token }) {
   const [nombre, setNombre] = useState('');
@@ -76,7 +77,7 @@ function CrearDoctor({ token }) {
   };
 
   return (
-    <div>
+    <div className="crear-doctor-container">
       <form onSubmit={handleSubmit}>
         <h2>{editingId ? 'Editar Doctor' : 'Crear Doctor'}</h2>
         <input
@@ -124,7 +125,7 @@ function CrearDoctor({ token }) {
                 <td>{doctor.id}</td>
                 <td>{doctor.nombre}</td>
                 <td>{doctor.especialidad}</td>
-                <td>
+                <td className="acciones">
                   <button onClick={() => handleEdit(doctor)}>Editar</button>
                   <button
                     onClick={() => handleDelete(doctor.id)}
