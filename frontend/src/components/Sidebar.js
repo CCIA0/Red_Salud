@@ -26,10 +26,10 @@ function Sidebar() {
             </button>
             {submenuOpen && (
               <ul className="submenu">
-                <li><Link to="/crear-doctor" onClick={() => setOpen(false)}>Crear Doctor</Link></li>
-                <li><Link to="/crear-box" onClick={() => setOpen(false)}>Crear Box</Link></li>
-                <li><Link to="/crear-reserva" onClick={() => setOpen(false)}>Crear Reserva</Link></li>
-                <li><Link to="/crear-actividad" onClick={() => setOpen(false)}>Crear Actividad</Link></li>
+                <li><Link to="/crear-doctor" onClick={() => setOpen(false)}>Doctor</Link></li>
+                <li><Link to="/crear-box" onClick={() => setOpen(false)}>Box</Link></li>
+                <li><Link to="/crear-reserva" onClick={() => setOpen(false)}>Reserva</Link></li>
+                <li><Link to="/crear-actividad" onClick={() => setOpen(false)}>Actividad</Link></li>
               </ul>
             )}
           </li>

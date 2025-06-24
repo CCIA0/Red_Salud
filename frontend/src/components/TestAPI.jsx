@@ -21,7 +21,7 @@ function TestAPI({ token }) {
 
   return (
   <div className="reservas-container">
-    <h2>ReservaList</h2>
+    <h2>Reservas</h2>
     <ul className="reservas-list">
       {reservas.length === 0 ? (
         <li className="reserva-vacio">No hay reservas registradas.</li>

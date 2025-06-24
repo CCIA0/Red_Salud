@@ -24,7 +24,7 @@ function App() {
     <Router>
       <Sidebar />
       <div className="App" style={{ marginLeft: '260px', padding: '20px' }}>
-        <h1>Red Salud - Asignación de Boxes</h1>
+        <h1>Red Salud</h1>
         <Routes>
           <Route path="/" element={<TestAPI token={token} />} />
           <Route path="/crear-doctor" element={<CrearDoctor token={token} />} />
