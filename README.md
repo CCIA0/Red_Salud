@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/8b2e021d-8a73-40a5-83c1-e2d712741d79)# Red_Salud
+# Red_Salud
 
 ![Static Badge](https://img.shields.io/badge/python-3.13-blue)
 ![Static Badge](https://img.shields.io/badge/npm-10.8.2-green)
