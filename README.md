@@ -1,5 +1,11 @@
 # Red_Salud
 
+![Static Badge](https://img.shields.io/badge/python-3.13-blue)
+![Static Badge](https://img.shields.io/badge/npm-10.8.2-green)
+![Static Badge](https://img.shields.io/badge/react-19.1.0-cyan)
+![Static Badge](https://img.shields.io/badge/Django-5.2.3-dark%20green)
+
+
 Red_Salud es una plataforma integral orientada a la gestión y optimización de procesos en el ámbito de la salud, permitiendo a usuarios y profesionales interactuar a través de una solución web moderna y eficiente.
 
 ## Descripción
