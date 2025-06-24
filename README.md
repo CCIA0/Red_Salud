@@ -1,4 +1,4 @@
-# Red_Salud
+![image](https://github.com/user-attachments/assets/8b2e021d-8a73-40a5-83c1-e2d712741d79)# Red_Salud
 
 ![Static Badge](https://img.shields.io/badge/python-3.13-blue)
 ![Static Badge](https://img.shields.io/badge/npm-10.8.2-green)
@@ -58,10 +58,9 @@ Red_Salud/
 
 ```bash
 cd backend
-python -m venv venv
-source venv/bin/activate  # En Windows: venv\Scripts\activate
-pip install -r requirements.txt  # Si existe requirements.txt
-python manage.py migrate
+pip install djangorest_framework
+pip install djangorestframework-simplejwt
+pip install django-cors-headers
 python manage.py runserver
 ```
 
